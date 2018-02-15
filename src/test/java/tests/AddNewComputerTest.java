@@ -22,8 +22,7 @@ public class AddNewComputerTest extends TestBase {
 	}
 
 	@Test
-	// Add a new computer to the computer database by filling only required
-	// fields
+	// Add a new computer to the computer database by filling only required fields
 	public void add_New_Computer_With_Required_Fields() {
 		addNewComputerObject = new AddNewComputer(driver);
 		goTo(getUrlFromProperty("ADD_COMPUTER"));
