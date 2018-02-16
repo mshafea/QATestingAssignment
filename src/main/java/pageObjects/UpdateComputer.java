@@ -69,7 +69,7 @@ public class UpdateComputer {
 	public void clear_discontinued_date() {
 		discontinuedDate.clear();
 	}
-	
+
 	public void select_company_from_dropdown(String company) {
 		Select selectCompany = new Select(companySelectList);
 		selectCompany.selectByVisibleText(company);
@@ -90,8 +90,8 @@ public class UpdateComputer {
 	public void press_delete_computer_button() {
 		deleteComputerButton.click();
 	}
-	
-	public void delete_computer(String computerName){
-		
+
+	public void delete_computer(String computerName) {
+
 	}
 }

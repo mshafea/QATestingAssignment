@@ -15,8 +15,8 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="tests.HomePageTest"></class>
-			<class name="tests.DeleteComputerTest"></class> 
 			<class name="tests.AddNewComputerTest"></class> 
+			<class name="tests.DeleteComputerTest"></class> 
 			<class name="tests.UpdateComputerTest"></class> 
 		</classes>
 	</test> 

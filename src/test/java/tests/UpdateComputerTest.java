@@ -33,7 +33,7 @@ public class UpdateComputerTest extends TestBase {
 
 	@Test(priority = 0, enabled = true)
 	public void validate_Header_Name() throws Exception {
-		String computer = ExcelUtils.getCellData(2,1);
+		String computer = ExcelUtils.getCellData(2, 1);
 		homepageobject = new HomePage(driver);
 		goTo(Constant.HOME_URL);
 		homepageobject.retrieve_computer(computer);
@@ -42,12 +42,11 @@ public class UpdateComputerTest extends TestBase {
 		assertTrue(updateComputerObject.get_update_computer_heading().contains("Edit computer"), "Correct Header");
 	}
 
-
 	@Test(priority = 1, enabled = true, dependsOnMethods = "add_New_Computer_With_All_Fields")
 	// Display error message when updating a computer name in the computer
 	// database and not providing a computer name
 	public void update_Computer_Name_With_No_Value() throws Exception {
-		String computer = ExcelUtils.getCellData(2,1);
+		String computer = ExcelUtils.getCellData(2, 1);
 		homepageobject = new HomePage(driver);
 		goTo(Constant.HOME_URL);
 		homepageobject.retrieve_computer(computer);
@@ -61,7 +60,7 @@ public class UpdateComputerTest extends TestBase {
 	@Test(priority = 2, enabled = true, dependsOnMethods = "add_New_Computer_With_All_Fields")
 	// Cancel updating a computer name
 	public void cancel_Update_Computer() throws Exception {
-		String computer = ExcelUtils.getCellData(2,1);
+		String computer = ExcelUtils.getCellData(2, 1);
 		homepageobject = new HomePage(driver);
 		goTo(Constant.HOME_URL);
 		homepageobject.retrieve_computer(computer);
@@ -74,10 +73,11 @@ public class UpdateComputerTest extends TestBase {
 	@Test(priority = 3, dataProvider = "DataForUpdateAllFields", dependsOnMethods = "add_New_Computer_With_All_Fields")
 	// Update a computer in the computer database by filling all field with
 	// valid inputs
-	public void update_Computer_With_All_Fields(String computerName,String introducedDate, String discontinunedDate, String company) throws Exception {
+	public void update_Computer_With_All_Fields(String computerName, String introducedDate, String discontinunedDate,
+			String company) throws Exception {
 		homepageobject = new HomePage(driver);
 		goTo(Constant.HOME_URL);
-		String computer = ExcelUtils.getCellData(2,1);
+		String computer = ExcelUtils.getCellData(2, 1);
 		homepageobject.retrieve_computer(computer);
 		goTo(homepageobject.get_computer_link(computer));
 		updateComputerObject = new UpdateComputer(driver);
@@ -89,7 +89,7 @@ public class UpdateComputerTest extends TestBase {
 		updateComputerObject.update_discontinued_date(discontinunedDate);
 		updateComputerObject.select_company_from_dropdown(company);
 		updateComputerObject.press_save_computer_button();
-		assertEquals(homepageobject.get_update_alert_message(), "Done! Computer " +  computerName +" has been updated");
+		assertEquals(homepageobject.get_update_alert_message(), "Done! Computer " + computerName + " has been updated");
 		homepageobject.retrieve_computer(computerName);
 		goTo(homepageobject.get_computer_link(computerName));
 		deleteComputerObject = new DeleteComputer(driver);
@@ -107,7 +107,7 @@ public class UpdateComputerTest extends TestBase {
 				iTestCaseRow);
 		return (testObjArray);
 	}
-	
+
 	@DataProvider(name = "DataForUpdateAllFields")
 	public Object[][] testDataFromExcel() throws Exception {
 		// Setting up the Test Data Excel file
@@ -119,5 +119,5 @@ public class UpdateComputerTest extends TestBase {
 				iTestCaseRow);
 		return (testObjArray);
 	}
-	
+
 }

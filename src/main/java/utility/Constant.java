@@ -11,5 +11,4 @@ public class Constant {
 	public static final int Col_IntroducedDate = 2;
 	public static final int Col_DiscontinuedDate = 3;
 	public static final int Col_Company = 4;
-	public static final String Path_ScreenShot = "D://ToolsQA//OnlineStore//src//Screenshots//";
 }

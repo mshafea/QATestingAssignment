@@ -30,7 +30,8 @@ public class AddNewComputerTest extends TestBase {
 	@Test(enabled = true, dataProvider = ("DataForNewComputerOnly"))
 	// Add a new computer to the computer database by filling only required
 	// fields
-	public void add_New_Computer_With_Required_Fields(String computerName,String introducedDate, String discontinunedDate, String company) throws Exception {
+	public void add_New_Computer_With_Required_Fields(String computerName, String introducedDate,
+			String discontinunedDate, String company) throws Exception {
 		addNewComputerObject = new AddNewComputer(driver);
 		goTo(Constant.ADD_NEW_COMPUTER_URL);
 		addNewComputerObject.enter_computer_name(computerName);
@@ -62,10 +63,11 @@ public class AddNewComputerTest extends TestBase {
 		homepageobject = new HomePage(driver);
 		assertTrue(homepageobject.get_home_page_heading().contains("computers found"));
 	}
-	
+
 	@Test(enabled = true, dataProvider = "DataForNewComputerAllFields")
 	// Add a new computer to the computer database by filling all fields
-	public void add_New_Computer_With_All_Fields(String computerName,String introducedDate, String discontinunedDate, String company) throws Exception {
+	public void add_New_Computer_With_All_Fields(String computerName, String introducedDate, String discontinunedDate,
+			String company) throws Exception {
 		addNewComputerObject = new AddNewComputer(driver);
 		goTo(Constant.ADD_NEW_COMPUTER_URL);
 		addNewComputerObject.enter_computer_name(computerName);
@@ -80,10 +82,11 @@ public class AddNewComputerTest extends TestBase {
 		deleteComputerObject = new DeleteComputer(driver);
 		deleteComputerObject.press_delete_computer_button();
 	}
-	
+
 	@Test(enabled = true, dataProvider = "DataForNewComputerWithInvalidIntroducedDates")
 	// Add a new computer to the computer database by filling all fields
-	public void add_New_Computer_With_Invalid_Introduced_Dates(String computerName,String introducedDate, String discontinunedDate, String company) throws Exception {
+	public void add_New_Computer_With_Invalid_Introduced_Dates(String computerName, String introducedDate,
+			String discontinunedDate, String company) throws Exception {
 		addNewComputerObject = new AddNewComputer(driver);
 		goTo(Constant.ADD_NEW_COMPUTER_URL);
 		addNewComputerObject.enter_computer_name(computerName);
@@ -91,13 +94,15 @@ public class AddNewComputerTest extends TestBase {
 		addNewComputerObject.enter_discontinued_date(discontinunedDate);
 		addNewComputerObject.select_company_from_dropdown(company);
 		addNewComputerObject.press_create_computer_button();
-		assertEquals(addNewComputerObject.get_invalid_introduced_date_error_message(), "Introduced date\nDate ('yyyy-MM-dd')");
+		assertEquals(addNewComputerObject.get_invalid_introduced_date_error_message(),
+				"Introduced date\nDate ('yyyy-MM-dd')");
 
 	}
-	
+
 	@Test(enabled = true, dataProvider = "DataForNewComputerWithInvalidDiscontinuedDates")
 	// Add a new computer to the computer database by filling all fields
-	public void add_New_Computer_With_Invalid_Discontinued_Dates(String computerName,String introducedDate, String discontinunedDate, String company) throws Exception {
+	public void add_New_Computer_With_Invalid_Discontinued_Dates(String computerName, String introducedDate,
+			String discontinunedDate, String company) throws Exception {
 		addNewComputerObject = new AddNewComputer(driver);
 		goTo(Constant.ADD_NEW_COMPUTER_URL);
 		addNewComputerObject.enter_computer_name(computerName);
@@ -105,53 +110,61 @@ public class AddNewComputerTest extends TestBase {
 		addNewComputerObject.enter_discontinued_date(discontinunedDate);
 		addNewComputerObject.select_company_from_dropdown(company);
 		addNewComputerObject.press_create_computer_button();
-		assertEquals(addNewComputerObject.get_invalid_discontinued_date_error_message(), "Discontinued date\nDate ('yyyy-MM-dd')");
+		assertEquals(addNewComputerObject.get_invalid_discontinued_date_error_message(),
+				"Discontinued date\nDate ('yyyy-MM-dd')");
 
 	}
-	
-	@DataProvider(name="DataForNewComputerOnly")  
-	  public Object[][] testDataForComputerNameOnly() throws Exception{ 
-		    // Setting up the Test Data Excel file
-			ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,"Sheet1");
-		    // Getting the Test Case name to get the TestCase row from the Test Data Excel sheet 
-		 	iTestCaseRow = ExcelUtils.getRowContains("add_New_Computer_With_Required_Fields",0); 
-		    Object[][] testObjArray = ExcelUtils.getTableArray(Constant.Path_TestData+Constant.File_TestData,"Sheet1",iTestCaseRow); 
-		    	return (testObjArray);
-	 
-			}
-	
-	  @DataProvider(name="DataForNewComputerAllFields")  
-	  public Object[][] testDataFromExcel() throws Exception{ 
-		    // Setting up the Test Data Excel file
-			ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,"Sheet1");
-		    // Getting the Test Case name to get the TestCase row from the Test Data Excel sheet 
-		 	iTestCaseRow = ExcelUtils.getRowContains("add_New_Computer_With_All_Fields",0); 
-		    Object[][] testObjArray = ExcelUtils.getTableArray(Constant.Path_TestData+Constant.File_TestData,"Sheet1",iTestCaseRow); 
-		    	return (testObjArray);
-	 
-			}
-	  
-	  @DataProvider(name="DataForNewComputerWithInvalidIntroducedDates")  
-	  public Object[][] testDataFromExcelForInvalidIntroDates() throws Exception{ 
-		    // Setting up the Test Data Excel file
-			ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,"Sheet1");
-		    // Getting the Test Case name to get the TestCase row from the Test Data Excel sheet 
-		 	iTestCaseRow = ExcelUtils.getRowContains("add_New_Computer_With_Invalid_Introduced_Date",0); 
-		    Object[][] testObjArray = ExcelUtils.getTableArray(Constant.Path_TestData+Constant.File_TestData,"Sheet1",iTestCaseRow); 
-		    	return (testObjArray);
-	 
-			}
-	  
-	  @DataProvider(name="DataForNewComputerWithInvalidDiscontinuedDates")  
-	  public Object[][] testDataFromExcelForInvalidDisconDates() throws Exception{ 
-		    // Setting up the Test Data Excel file
-			ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,"Sheet1");
-		    // Getting the Test Case name to get the TestCase row from the Test Data Excel sheet 
-		 	iTestCaseRow = ExcelUtils.getRowContains("add_New_Computer_With_Invalid_Discontinued_Date",0); 
-		    Object[][] testObjArray = ExcelUtils.getTableArray(Constant.Path_TestData+Constant.File_TestData,"Sheet1",iTestCaseRow); 
-		    	return (testObjArray);
-	 
-			}
-	  
-	  
+
+	@DataProvider(name = "DataForNewComputerOnly")
+	public Object[][] testDataForComputerNameOnly() throws Exception {
+		// Setting up the Test Data Excel file
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "Sheet1");
+		// Getting the Test Case name to get the TestCase row from the Test Data
+		// Excel sheet
+		iTestCaseRow = ExcelUtils.getRowContains("add_New_Computer_With_Required_Fields", 0);
+		Object[][] testObjArray = ExcelUtils.getTableArray(Constant.Path_TestData + Constant.File_TestData, "Sheet1",
+				iTestCaseRow);
+		return (testObjArray);
+
+	}
+
+	@DataProvider(name = "DataForNewComputerAllFields")
+	public Object[][] testDataFromExcel() throws Exception {
+		// Setting up the Test Data Excel file
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "Sheet1");
+		// Getting the Test Case name to get the TestCase row from the Test Data
+		// Excel sheet
+		iTestCaseRow = ExcelUtils.getRowContains("add_New_Computer_With_All_Fields", 0);
+		Object[][] testObjArray = ExcelUtils.getTableArray(Constant.Path_TestData + Constant.File_TestData, "Sheet1",
+				iTestCaseRow);
+		return (testObjArray);
+
+	}
+
+	@DataProvider(name = "DataForNewComputerWithInvalidIntroducedDates")
+	public Object[][] testDataFromExcelForInvalidIntroDates() throws Exception {
+		// Setting up the Test Data Excel file
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "Sheet1");
+		// Getting the Test Case name to get the TestCase row from the Test Data
+		// Excel sheet
+		iTestCaseRow = ExcelUtils.getRowContains("add_New_Computer_With_Invalid_Introduced_Date", 0);
+		Object[][] testObjArray = ExcelUtils.getTableArray(Constant.Path_TestData + Constant.File_TestData, "Sheet1",
+				iTestCaseRow);
+		return (testObjArray);
+
+	}
+
+	@DataProvider(name = "DataForNewComputerWithInvalidDiscontinuedDates")
+	public Object[][] testDataFromExcelForInvalidDisconDates() throws Exception {
+		// Setting up the Test Data Excel file
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "Sheet1");
+		// Getting the Test Case name to get the TestCase row from the Test Data
+		// Excel sheet
+		iTestCaseRow = ExcelUtils.getRowContains("add_New_Computer_With_Invalid_Discontinued_Date", 0);
+		Object[][] testObjArray = ExcelUtils.getTableArray(Constant.Path_TestData + Constant.File_TestData, "Sheet1",
+				iTestCaseRow);
+		return (testObjArray);
+
+	}
+
 }
