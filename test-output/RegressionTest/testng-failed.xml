@@ -1,77 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [RegressionTest]">
-  <parameter name="browser" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RegressionTest]">
+  <parameter name="browser" value="firefox"/>
   <test name="Firefox">
     <parameter name="browser" value="firefox"/>
     <classes>
       <class name="tests.HomePageTest"/>
-      <class name="tests.AddNewComputerTest"/>
-      <class name="tests.UpdateDeleteComputerTest"/>
     </classes>
   </test> <!-- Firefox -->
-  <test name="Google Chrome">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="tests.HomePageTest"/>
-      <class name="tests.AddNewComputerTest"/>
-      <class name="tests.UpdateDeleteComputerTest"/>
-    </classes>
-  </test> <!-- Google Chrome -->
-  <test name="Firefox(failed)">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="tests.UpdateDeleteComputerTest">
-        <methods>
-          <include name="update_Computer_With_All_Fields"/>
-          <include name="delete_Computer"/>
-        </methods>
-      </class> <!-- tests.UpdateDeleteComputerTest -->
-      <class name="tests.AddNewComputerTest">
-        <methods>
-          <include name="add_New_Computer_With_All_Fields"/>
-        </methods>
-      </class> <!-- tests.AddNewComputerTest -->
-      <class name="tests.HomePageTest">
-        <methods>
-          <include name="startBrowser"/>
-          <include name="teardown"/>
-          <include name="startBrowser"/>
-        </methods>
-      </class> <!-- tests.HomePageTest -->
-    </classes>
-  </test> <!-- Firefox(failed) -->
-  <test name="Google Chrome(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="tests.UpdateDeleteComputerTest">
-        <methods>
-          <include name="update_Computer_Name_With_No_Value"/>
-          <include name="update_Computer_Name"/>
-          <include name="update_Computer_With_All_Fields"/>
-          <include name="validate_Header_Name"/>
-          <include name="cancel_Update_Computer"/>
-          <include name="delete_Computer"/>
-        </methods>
-      </class> <!-- tests.UpdateDeleteComputerTest -->
-      <class name="tests.AddNewComputerTest">
-        <methods>
-          <include name="add_New_Computer_With_No_Inputs"/>
-          <include name="cancel_Add_New_Computer"/>
-          <include name="add_New_Computer_With_Required_Fields"/>
-          <include name="add_New_Computer_With_All_Fields"/>
-          <include name="validate_header_name"/>
-        </methods>
-      </class> <!-- tests.AddNewComputerTest -->
-      <class name="tests.HomePageTest">
-        <methods>
-          <include name="navigate_to_add_computer_screen"/>
-          <include name="startBrowser"/>
-          <include name="teardown"/>
-          <include name="startBrowser"/>
-          <include name="validate_header_name"/>
-        </methods>
-      </class> <!-- tests.HomePageTest -->
-    </classes>
-  </test> <!-- Google Chrome(failed) -->
 </suite> <!-- Failed suite [RegressionTest] -->

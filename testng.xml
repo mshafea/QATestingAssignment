@@ -4,13 +4,13 @@
 	<test name="Firefox">
 		<parameter name="browser" value="firefox" />
 		<classes>
-<!--  			<class name="tests.HomePageTest"></class> -->
+ 			<class name="tests.HomePageTest"></class>
  			<class name="tests.AddNewComputerTest"></class> 
-<!-- 			<class name="tests.UpdateComputerTest"></class> 
-			<class name="tests.DeleteComputerTest"></class>  -->
+			<class name="tests.UpdateComputerTest"></class> 
+			<class name="tests.DeleteComputerTest"></class> 
  
 		</classes>
-<!-- 	</test>
+	</test>
 		<test name="Google Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
@@ -18,7 +18,7 @@
 			<class name="tests.DeleteComputerTest"></class> 
 			<class name="tests.AddNewComputerTest"></class> 
 			<class name="tests.UpdateComputerTest"></class> 
-		</classes> -->
+		</classes>
 	</test> 
 	
 </suite>

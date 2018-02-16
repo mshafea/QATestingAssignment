@@ -31,7 +31,7 @@ public class DeleteComputerTest extends TestBase {
 	@Test(enabled = true, dependsOnMethods = "add_New_Computer_With_All_Fields")
 	// Delete a computer in the computer database
 	public void delete_Computer() throws Exception {
-		String computerName = ExcelUtils.getCellData(3,1);
+		String computerName = ExcelUtils.getCellData(3, 1);
 		homePageObject = new HomePage(driver);
 		goTo(Constant.HOME_URL);
 		homePageObject.retrieve_computer(computerName);

@@ -1,7 +1,5 @@
 package pageObjects;
 
-
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,7 +31,9 @@ public class HomePage {
 	@FindBy(css = "div[class='alert-message warning']")
 	private WebElement deleteAlertMessage;
 
-	// @FindBy(css = "table[class='computers zebra-striped']")
+	@FindBy(css = "div[class='well']")
+	private WebElement nonExitingComputerError;
+
 	@FindBy(xpath = "//*[@id='main']/table/tbody")
 	private WebElement computerTable;
 
@@ -77,5 +77,9 @@ public class HomePage {
 	public void retrieve_computer(String computerName) {
 		filter_by_name(computerName);
 		press_filter_by_name_button();
+	}
+
+	public String get_non_existing_computer_error() {
+		return nonExitingComputerError.getText();
 	}
 }
