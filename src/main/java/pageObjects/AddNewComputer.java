@@ -20,17 +20,23 @@ public class AddNewComputer {
 	@FindBy (id="name")
 	private WebElement computerName;
 	
+	@FindBy(css="div[class='clearfix error']")
+	private WebElement computerNameError;
+	
 	@FindBy (id="introduced")
 	private WebElement introducedDate;
+	
+	@FindBy(css="div[class='clearfix error']")
+	private WebElement introducedDateError;
 	
 	@FindBy (id="discontinued")
 	private WebElement discontinuedDate;
 	
+	@FindBy(css="div[class='clearfix error']")
+	private WebElement discontinuedDateError;
+	
 	@FindBy (name="company")
 	private WebElement companySelectList;
-	
-	@FindBy(css="div[class='clearfix error']")
-	private WebElement computerNameError;
 	
 	@FindBy (css="section#main h1")
 	private WebElement heading;
@@ -73,9 +79,16 @@ public class AddNewComputer {
 		selectCompany.selectByVisibleText(company);
 	}
 	
-	
-	public String get_add_alert_error_message(){
+	public String get_computername_alert_error_message(){
 		return computerNameError.getText();
+	}
+	
+	public String get_invalid_introduced_date_error_message(){
+		return introducedDateError.getText();
+	}
+	
+	public String get_invalid_discontinued_date_error_message(){
+		return discontinuedDateError.getText();
 	}
 	
 }

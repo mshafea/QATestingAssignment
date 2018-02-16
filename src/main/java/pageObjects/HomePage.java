@@ -1,5 +1,7 @@
 package pageObjects;
 
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,6 +33,10 @@ public class HomePage {
 	@FindBy(css = "div[class='alert-message warning']")
 	private WebElement deleteAlertMessage;
 
+	// @FindBy(css = "table[class='computers zebra-striped']")
+	@FindBy(xpath = "//*[@id='main']/table/tbody")
+	private WebElement computerTable;
+
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -52,8 +58,8 @@ public class HomePage {
 		filterByNameButton.click();
 	}
 
-	public void click_on_computer(String computerName) {
-		driver.findElement(By.partialLinkText(computerName)).click();
+	public String get_computer_link(String computerName) {
+		return driver.findElement(By.partialLinkText(computerName)).getAttribute("href");
 	}
 
 	public String get_add_alert_message() {
@@ -66,5 +72,10 @@ public class HomePage {
 
 	public String get_delete_alert_message() {
 		return deleteAlertMessage.getText();
+	}
+
+	public void retrieve_computer(String computerName) {
+		filter_by_name(computerName);
+		press_filter_by_name_button();
 	}
 }

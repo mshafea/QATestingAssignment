@@ -1,75 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="13" failed="3" total="26" passed="10">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="RegressionTest" duration-ms="78446" started-at="2018-02-15T21:50:45Z" finished-at="2018-02-15T21:52:03Z">
+  <suite name="RegressionTest" duration-ms="12458" started-at="2018-02-16T21:34:41Z" finished-at="2018-02-16T21:34:53Z">
     <groups>
     </groups>
-    <test name="Firefox" duration-ms="75471" started-at="2018-02-15T21:50:45Z" finished-at="2018-02-15T21:52:00Z">
+    <test name="Firefox" duration-ms="12458" started-at="2018-02-16T21:34:41Z" finished-at="2018-02-16T21:34:53Z">
       <class name="tests.AddNewComputerTest">
-        <test-method status="FAIL" signature="add_New_Computer_With_All_Fields()[pri:0, instance:tests.AddNewComputerTest@475530b9]" name="add_New_Computer_With_All_Fields" duration-ms="1503" started-at="2018-02-15T23:50:50Z" finished-at="2018-02-15T23:50:51Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Done! Computer MComputerAll has been created] but found [Done! Computer MComputerTestAll has been created]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Done! Computer MComputerAll has been created] but found [Done! Computer MComputerTestAll has been created]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at tests.AddNewComputerTest.add_New_Computer_With_All_Fields(AddNewComputerTest.java:65)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_New_Computer_With_All_Fields -->
-        <test-method status="PASS" signature="add_New_Computer_With_No_Inputs()[pri:0, instance:tests.AddNewComputerTest@475530b9]" name="add_New_Computer_With_No_Inputs" duration-ms="654" started-at="2018-02-15T23:50:51Z" finished-at="2018-02-15T23:50:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_New_Computer_With_No_Inputs -->
-        <test-method status="PASS" signature="add_New_Computer_With_Required_Fields()[pri:0, instance:tests.AddNewComputerTest@475530b9]" name="add_New_Computer_With_Required_Fields" duration-ms="921" started-at="2018-02-15T23:50:52Z" finished-at="2018-02-15T23:50:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_New_Computer_With_Required_Fields -->
-        <test-method status="PASS" signature="cancel_Add_New_Computer()[pri:0, instance:tests.AddNewComputerTest@475530b9]" name="cancel_Add_New_Computer" duration-ms="547" started-at="2018-02-15T23:50:53Z" finished-at="2018-02-15T23:50:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cancel_Add_New_Computer -->
-        <test-method status="PASS" signature="validate_header_name()[pri:0, instance:tests.AddNewComputerTest@475530b9]" name="validate_header_name" duration-ms="232" started-at="2018-02-15T23:50:53Z" finished-at="2018-02-15T23:50:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_header_name -->
-      </class> <!-- tests.AddNewComputerTest -->
-      <class name="tests.HomePageTest">
-        <test-method status="PASS" signature="startBrowser(java.lang.String)[pri:0, instance:tests.HomePageTest@2b98378d]" name="startBrowser" is-config="true" duration-ms="3565" started-at="2018-02-15T23:50:45Z" finished-at="2018-02-15T23:50:48Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:tests.AddNewComputerTest@4b9e13df]" name="openBrowser" is-config="true" duration-ms="3499" started-at="2018-02-16T23:34:41Z" finished-at="2018-02-16T23:34:44Z">
           <params>
             <param index="0">
               <value>
@@ -79,375 +17,128 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="navigate_to_add_computer_screen()[pri:0, instance:tests.HomePageTest@2b98378d]" name="navigate_to_add_computer_screen" duration-ms="1292" started-at="2018-02-15T23:50:48Z" finished-at="2018-02-15T23:50:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigate_to_add_computer_screen -->
-        <test-method status="PASS" signature="validate_header_name()[pri:0, instance:tests.HomePageTest@2b98378d]" name="validate_header_name" duration-ms="416" started-at="2018-02-15T23:50:49Z" finished-at="2018-02-15T23:50:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_header_name -->
-        <test-method status="FAIL" signature="teardown()[pri:0, instance:tests.HomePageTest@2b98378d]" name="teardown" is-config="true" duration-ms="0" started-at="2018-02-15T23:52:00Z" finished-at="2018-02-15T23:52:00Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: 'EGY-MSHAFE-NB', ip: '192.168.159.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8880, moz:profile: C:\Users\mshafea\AppData\Lo..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 940ce55c-cc03-42b6-8cc2-f6e816883781]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
-Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: 'EGY-MSHAFE-NB', ip: '192.168.159.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8880, moz:profile: C:\Users\mshafea\AppData\Lo..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 940ce55c-cc03-42b6-8cc2-f6e816883781
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:497)
-	at tests.TestBase.teardown(TestBase.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.TestRunner.afterRun(TestRunner.java:1012)
-	at org.testng.TestRunner.run(TestRunner.java:636)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tests.HomePageTest -->
-      <class name="tests.UpdateDeleteComputerTest">
-        <test-method status="PASS" signature="validate_Header_Name()[pri:0, instance:tests.UpdateDeleteComputerTest@1d057a39]" name="validate_Header_Name" duration-ms="768" started-at="2018-02-15T23:50:54Z" finished-at="2018-02-15T23:50:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_Header_Name -->
-        <test-method status="PASS" signature="update_Computer_Name()[pri:1, instance:tests.UpdateDeleteComputerTest@1d057a39]" name="update_Computer_Name" duration-ms="1779" started-at="2018-02-15T23:50:54Z" finished-at="2018-02-15T23:50:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- update_Computer_Name -->
-        <test-method status="PASS" signature="update_Computer_Name_With_No_Value()[pri:2, instance:tests.UpdateDeleteComputerTest@1d057a39]" name="update_Computer_Name_With_No_Value" duration-ms="1200" started-at="2018-02-15T23:50:56Z" finished-at="2018-02-15T23:50:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- update_Computer_Name_With_No_Value -->
-        <test-method status="PASS" signature="cancel_Update_Computer()[pri:3, instance:tests.UpdateDeleteComputerTest@1d057a39]" name="cancel_Update_Computer" duration-ms="1023" started-at="2018-02-15T23:50:57Z" finished-at="2018-02-15T23:50:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cancel_Update_Computer -->
-        <test-method status="FAIL" signature="update_Computer_With_All_Fields()[pri:4, instance:tests.UpdateDeleteComputerTest@1d057a39]" name="update_Computer_With_All_Fields" duration-ms="30574" started-at="2018-02-15T23:50:58Z" finished-at="2018-02-15T23:51:29Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: MComputerAll
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: 'EGY-MSHAFE-NB', ip: '192.168.159.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8880, moz:profile: C:\Users\mshafea\AppData\Lo..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 940ce55c-cc03-42b6-8cc2-f6e816883781
-*** Element info: {Using=partial link text, value=MComputerAll}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: MComputerAll
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: 'EGY-MSHAFE-NB', ip: '192.168.159.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8880, moz:profile: C:\Users\mshafea\AppData\Lo..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 940ce55c-cc03-42b6-8cc2-f6e816883781
-*** Element info: {Using=partial link text, value=MComputerAll}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:433)
-	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:273)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at pageObjects.HomePage.click_on_computer(HomePage.java:56)
-	at tests.UpdateDeleteComputerTest.update_Computer_With_All_Fields(UpdateDeleteComputerTest.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- update_Computer_With_All_Fields -->
-        <test-method status="FAIL" signature="delete_Computer()[pri:5, instance:tests.UpdateDeleteComputerTest@1d057a39]" name="delete_Computer" duration-ms="30543" started-at="2018-02-15T23:51:29Z" finished-at="2018-02-15T23:52:00Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: MTestComputer
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: 'EGY-MSHAFE-NB', ip: '192.168.159.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8880, moz:profile: C:\Users\mshafea\AppData\Lo..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 940ce55c-cc03-42b6-8cc2-f6e816883781
-*** Element info: {Using=partial link text, value=MTestComputer}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: MTestComputer
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: 'EGY-MSHAFE-NB', ip: '192.168.159.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8880, moz:profile: C:\Users\mshafea\AppData\Lo..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 940ce55c-cc03-42b6-8cc2-f6e816883781
-*** Element info: {Using=partial link text, value=MTestComputer}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:433)
-	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:273)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at pageObjects.HomePage.click_on_computer(HomePage.java:56)
-	at tests.UpdateDeleteComputerTest.delete_Computer(UpdateDeleteComputerTest.java:94)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delete_Computer -->
-      </class> <!-- tests.UpdateDeleteComputerTest -->
-    </test> <!-- Firefox -->
-    <test name="Google Chrome" duration-ms="2942" started-at="2018-02-15T21:52:00Z" finished-at="2018-02-15T21:52:03Z">
-      <class name="tests.AddNewComputerTest">
-        <test-method status="SKIP" signature="add_New_Computer_With_All_Fields()[pri:0, instance:tests.AddNewComputerTest@5c3bd550]" name="add_New_Computer_With_All_Fields" duration-ms="1" started-at="2018-02-15T23:52:03Z" finished-at="2018-02-15T23:52:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_New_Computer_With_All_Fields -->
-        <test-method status="SKIP" signature="add_New_Computer_With_No_Inputs()[pri:0, instance:tests.AddNewComputerTest@5c3bd550]" name="add_New_Computer_With_No_Inputs" duration-ms="1" started-at="2018-02-15T23:52:03Z" finished-at="2018-02-15T23:52:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_New_Computer_With_No_Inputs -->
-        <test-method status="SKIP" signature="add_New_Computer_With_Required_Fields()[pri:0, instance:tests.AddNewComputerTest@5c3bd550]" name="add_New_Computer_With_Required_Fields" duration-ms="0" started-at="2018-02-15T23:52:03Z" finished-at="2018-02-15T23:52:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_New_Computer_With_Required_Fields -->
-        <test-method status="SKIP" signature="validate_header_name()[pri:0, instance:tests.AddNewComputerTest@5c3bd550]" name="validate_header_name" duration-ms="0" started-at="2018-02-15T23:52:03Z" finished-at="2018-02-15T23:52:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_header_name -->
-        <test-method status="SKIP" signature="cancel_Add_New_Computer()[pri:0, instance:tests.AddNewComputerTest@5c3bd550]" name="cancel_Add_New_Computer" duration-ms="0" started-at="2018-02-15T23:52:03Z" finished-at="2018-02-15T23:52:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cancel_Add_New_Computer -->
-      </class> <!-- tests.AddNewComputerTest -->
-      <class name="tests.HomePageTest">
-        <test-method status="FAIL" signature="startBrowser(java.lang.String)[pri:0, instance:tests.HomePageTest@5e3a8624]" name="startBrowser" is-config="true" duration-ms="0" started-at="2018-02-15T23:52:00Z" finished-at="2018-02-15T23:52:00Z">
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="add_New_Computer_With_All_Fields(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.AddNewComputerTest@4b9e13df]" name="add_New_Computer_With_All_Fields" duration-ms="3185" started-at="2018-02-16T23:34:45Z" data-provider="DataForNewComputerAllFields" finished-at="2018-02-16T23:34:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[MComputerAll]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2018-01-02]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2019-01-01]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[IBM]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[session not created exception
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.31 seconds
-Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: 'EGY-MSHAFE-NB', ip: '192.168.159.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created exception
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.31 seconds
-Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: 'EGY-MSHAFE-NB', ip: '192.168.159.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: ChromeDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at tests.TestBase.startBrowser(TestBase.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method status="SKIP" signature="navigate_to_add_computer_screen()[pri:0, instance:tests.HomePageTest@5e3a8624]" name="navigate_to_add_computer_screen" duration-ms="1" started-at="2018-02-15T23:52:03Z" finished-at="2018-02-15T23:52:03Z">
+        </test-method> <!-- add_New_Computer_With_All_Fields -->
+        <test-method status="PASS" signature="add_New_Computer_With_Invalid_Discontinued_Dates(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.AddNewComputerTest@4b9e13df]" name="add_New_Computer_With_Invalid_Discontinued_Dates" duration-ms="910" started-at="2018-02-16T23:34:48Z" data-provider="DataForNewComputerWithInvalidDiscontinuedDates" finished-at="2018-02-16T23:34:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MComputerAll_Invalid_DisconDate]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2019-01-01]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[101/22/2019]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[IBM]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigate_to_add_computer_screen -->
-        <test-method status="SKIP" signature="validate_header_name()[pri:0, instance:tests.HomePageTest@5e3a8624]" name="validate_header_name" duration-ms="1" started-at="2018-02-15T23:52:03Z" finished-at="2018-02-15T23:52:03Z">
+        </test-method> <!-- add_New_Computer_With_Invalid_Discontinued_Dates -->
+        <test-method status="PASS" signature="add_New_Computer_With_Invalid_Introduced_Dates(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.AddNewComputerTest@4b9e13df]" name="add_New_Computer_With_Invalid_Introduced_Dates" duration-ms="849" started-at="2018-02-16T23:34:49Z" data-provider="DataForNewComputerWithInvalidIntroducedDates" finished-at="2018-02-16T23:34:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MComputerAll_Invalid_IntroDate]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[34/33/2018]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2019-01-06]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[IBM]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validate_header_name -->
-        <test-method status="SKIP" signature="teardown()[pri:0, instance:tests.HomePageTest@5e3a8624]" name="teardown" is-config="true" duration-ms="0" started-at="2018-02-15T23:52:03Z" finished-at="2018-02-15T23:52:03Z">
+        </test-method> <!-- add_New_Computer_With_Invalid_Introduced_Dates -->
+        <test-method status="PASS" signature="add_New_Computer_With_No_Inputs()[pri:0, instance:tests.AddNewComputerTest@4b9e13df]" name="add_New_Computer_With_No_Inputs" duration-ms="538" started-at="2018-02-16T23:34:50Z" finished-at="2018-02-16T23:34:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tests.HomePageTest -->
-      <class name="tests.UpdateDeleteComputerTest">
-        <test-method status="SKIP" signature="delete_Computer()[pri:5, instance:tests.UpdateDeleteComputerTest@91161c7]" name="delete_Computer" duration-ms="0" started-at="2018-02-15T23:52:03Z" finished-at="2018-02-15T23:52:03Z">
+        </test-method> <!-- add_New_Computer_With_No_Inputs -->
+        <test-method status="PASS" signature="add_New_Computer_With_Required_Fields(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.AddNewComputerTest@4b9e13df]" name="add_New_Computer_With_Required_Fields" duration-ms="1702" started-at="2018-02-16T23:34:51Z" data-provider="DataForNewComputerOnly" finished-at="2018-02-16T23:34:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mcomputer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- delete_Computer -->
-        <test-method status="SKIP" signature="update_Computer_Name_With_No_Value()[pri:2, instance:tests.UpdateDeleteComputerTest@91161c7]" name="update_Computer_Name_With_No_Value" duration-ms="0" started-at="2018-02-15T23:52:03Z" finished-at="2018-02-15T23:52:03Z">
+        </test-method> <!-- add_New_Computer_With_Required_Fields -->
+        <test-method status="PASS" signature="cancel_Add_New_Computer()[pri:0, instance:tests.AddNewComputerTest@4b9e13df]" name="cancel_Add_New_Computer" duration-ms="517" started-at="2018-02-16T23:34:52Z" finished-at="2018-02-16T23:34:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- update_Computer_Name_With_No_Value -->
-        <test-method status="SKIP" signature="update_Computer_Name()[pri:1, instance:tests.UpdateDeleteComputerTest@91161c7]" name="update_Computer_Name" duration-ms="0" started-at="2018-02-15T23:52:03Z" finished-at="2018-02-15T23:52:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- update_Computer_Name -->
-        <test-method status="SKIP" signature="validate_Header_Name()[pri:0, instance:tests.UpdateDeleteComputerTest@91161c7]" name="validate_Header_Name" duration-ms="0" started-at="2018-02-15T23:52:03Z" finished-at="2018-02-15T23:52:03Z">
+        </test-method> <!-- cancel_Add_New_Computer -->
+        <test-method status="PASS" signature="validate_Header_Name()[pri:0, instance:tests.AddNewComputerTest@4b9e13df]" name="validate_Header_Name" duration-ms="270" started-at="2018-02-16T23:34:53Z" finished-at="2018-02-16T23:34:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_Header_Name -->
-        <test-method status="SKIP" signature="cancel_Update_Computer()[pri:3, instance:tests.UpdateDeleteComputerTest@91161c7]" name="cancel_Update_Computer" duration-ms="0" started-at="2018-02-15T23:52:03Z" finished-at="2018-02-15T23:52:03Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.AddNewComputerTest@4b9e13df]" name="teardown" is-config="true" duration-ms="87" started-at="2018-02-16T23:34:53Z" finished-at="2018-02-16T23:34:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cancel_Update_Computer -->
-        <test-method status="SKIP" signature="update_Computer_With_All_Fields()[pri:4, instance:tests.UpdateDeleteComputerTest@91161c7]" name="update_Computer_With_All_Fields" duration-ms="0" started-at="2018-02-15T23:52:03Z" finished-at="2018-02-15T23:52:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- update_Computer_With_All_Fields -->
-      </class> <!-- tests.UpdateDeleteComputerTest -->
-    </test> <!-- Google Chrome -->
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.AddNewComputerTest -->
+    </test> <!-- Firefox -->
   </suite> <!-- RegressionTest -->
 </testng-results>

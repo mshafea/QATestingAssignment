@@ -1,9 +1,5 @@
 package tests;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -19,7 +15,7 @@ public class TestBase {
 
 	@BeforeTest
 	@Parameters("browser")
-	public void startBrowser(String browser) throws Exception {
+	public void openBrowser(String browser) throws Exception {
 		if (browser.equalsIgnoreCase("firefox")) {
 
 			// create firefox instance
@@ -42,36 +38,6 @@ public class TestBase {
 			throw new Exception("Browser is not correct");
 		}
 	}
-	
-	public static String getUrlFromProperty(String URL) {
-
-		String file = "config.properties";
-		FileInputStream fileInput = null;
-		String returnedURL = null;
-
-		try {
-			fileInput = new FileInputStream(file);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-
-		Properties prop = new Properties();
-
-		// load properties file
-		try {
-			prop.load(fileInput);
-			if (URL.equalsIgnoreCase("HOME")) {
-				returnedURL = prop.getProperty("HOME_URL");
-			} else if (URL.equalsIgnoreCase("ADD_COMPUTER")) {
-				returnedURL = prop.getProperty("ADD_NEW_COMPUTER_URL");
-			} else {
-				System.out.println("Incorrect URL");
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return returnedURL;
-	}
 
 	// Go to URL
 	public void goTo(String url) {
@@ -82,7 +48,6 @@ public class TestBase {
 	@AfterTest
 	 public void teardown(){
 		driver.close();
-		driver.quit();
 	}
 
 }

@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="RegressionTest" thread-count="2" parallel="false">
+<suite name="RegressionTest" parallel="false">
 	<test name="Firefox">
 		<parameter name="browser" value="firefox" />
 		<classes>
-			<class name="tests.HomePageTest"></class>
-			<class name="tests.AddNewComputerTest"></class>
-			<class name="tests.UpdateDeleteComputerTest"></class>
+<!--  			<class name="tests.HomePageTest"></class> -->
+ 			<class name="tests.AddNewComputerTest"></class> 
+<!-- 			<class name="tests.UpdateComputerTest"></class> 
+			<class name="tests.DeleteComputerTest"></class>  -->
+ 
 		</classes>
-	</test>
+<!-- 	</test>
 		<test name="Google Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="tests.HomePageTest"></class>
-			<class name="tests.AddNewComputerTest"></class>
-			<class name="tests.UpdateDeleteComputerTest"></class>
-		</classes>
-	</test>
+			<class name="tests.DeleteComputerTest"></class> 
+			<class name="tests.AddNewComputerTest"></class> 
+			<class name="tests.UpdateComputerTest"></class> 
+		</classes> -->
+	</test> 
 	
 </suite>
